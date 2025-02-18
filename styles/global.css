@@ -1,0 +1,28 @@
+:root {
+    --main-color: #174b2f;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'),
+        url('../fonts/GilroyLight.woff2') format('woff2'),
+        url('../fonts/GilroyLight.woff') format('woff');
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    padding: 5px 10px;
+}
