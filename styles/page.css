@@ -35,28 +35,27 @@
     max-width: 200px;
     margin-top: 190px;
     position: relative;
-    /* Оставляем, чтобы анимация была внутри кнопки */
 }
 
-/* Волна фиксирована за кнопкой */
+.section1__left__button:hover {
+    background-color: #123b26;
+    transition: 0.5s;
+}
+
 .section1__left__button::after {
     content: '';
     width: 100px;
-    /* Делаем больше, чтобы эффект был заметнее */
     height: 100px;
     border-radius: 50%;
     border: 3px solid var(--main-color);
-    /* Полупрозрачная граница */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    /* Отправляем за кнопку */
     animation: wave 1.5s infinite;
 }
 
-/* Анимация волны */
 @keyframes wave {
     0% {
         transform: translate(-50%, -50%) scale(1);
